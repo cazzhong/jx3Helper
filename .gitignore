@@ -1,0 +1,31 @@
+obj
+Library
+Library_*
+*.zip
+Temp
+storia
+*.app
+alice
+*.userprefs
+
+# iOS用プラグインの中身にmetaファイルが作成されるので、これらは無視する
+Assets/Plugins/*.bundle/*.meta
+Assets/Plugins/*.bundle/**/*.meta
+Assets/Plugins/*.bundle/**/**/*.meta
+
+# デバッグシンボルファイルは無視する
+Assets/Plugins/*.dSYM
+Assets/Plugins/*.dSYM.meta
+Assets/Plugins/**/*.dSYM
+Assets/Plugins/**/*.dSYM.meta
+
+# StyleCop用のキャッシュファイル
+*/StyleCop.Cache
+*/StyleCop.Cache.meta
+
+# CUIビルド時に作成されるエディターログを無視する
+editorLog.txt
+
+# 各自の一時作業場
+/Assets/no_commit/
+
